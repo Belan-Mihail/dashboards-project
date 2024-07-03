@@ -8,13 +8,13 @@ import { useStateContext } from '../contexts/ContextProvider';
 
 const ThemeSettings = () => {
   const { setColor, setMode, currentMode, currentColor, setThemeSettings } = useStateContext();
-  
+
   return (
     <div className='bg-half-transparent w-screen fixed nav-item top-0 right-0'>
       <div className='float-right h-screen dark:text-gray-200 bg-white dark:[#484B52] w-400'>
         <div className='flex justify-center items-center p-4 ml-4'>
           <p className='font-semibold text-xl'>Settings</p>
-          <button type='button' onClick={()=> {}} style={{color: 'rgb(153, 171, 180)', borderRadius: '50%'}} className=' hover:bg-light-gray text-2xl p-3 hover:drop-shadow-sm'>
+          <button type='button' onClick={()=> setThemeSettings(false)} style={{color: 'rgb(153, 171, 180)', borderRadius: '50%'}} className=' hover:bg-light-gray text-2xl p-3 hover:drop-shadow-sm'>
               <MdOutlineCancel />
           </button>
         </div>
